@@ -17,7 +17,7 @@ class Die extends Component {
     return Math.floor(Math.random() * max) + min
   }
 
-  rollDie() {
+  rollDie(value) {
     this.die.className = `die`
     void this.die.offsetWidth;
     let roll = value || this.getRandomInt()
